@@ -1,0 +1,180 @@
+/* Frontend Common Styles */
+.wpdcsm-countdown-wrapper {
+    margin: 40px 0;
+}
+
+.wpdcsm-countdown {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wpdcsm-countdown-item {
+    text-align: center;
+}
+
+.wpdcsm-countdown-number {
+    display: block;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.wpdcsm-countdown-label {
+    display: block;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.wpdcsm-newsletter-wrapper,
+.wpdcsm-contact-wrapper {
+    margin: 40px 0;
+}
+
+.wpdcsm-newsletter-title,
+.wpdcsm-contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.wpdcsm-newsletter-description,
+.wpdcsm-contact-description {
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.wpdcsm-newsletter-form,
+.wpdcsm-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wpdcsm-newsletter-form input,
+.wpdcsm-contact-form input,
+.wpdcsm-contact-form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.wpdcsm-newsletter-form input:focus,
+.wpdcsm-contact-form input:focus,
+.wpdcsm-contact-form textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.wpdcsm-contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.wpdcsm-newsletter-button,
+.wpdcsm-contact-button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.wpdcsm-newsletter-button:hover,
+.wpdcsm-contact-button:hover {
+    transform: translateY(-2px);
+}
+
+.wpdcsm-newsletter-message,
+.wpdcsm-contact-message-result {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.wpdcsm-newsletter-message.success,
+.wpdcsm-contact-message-result.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.wpdcsm-newsletter-message.error,
+.wpdcsm-contact-message-result.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.wpdcsm-social-wrapper {
+    margin: 40px 0;
+}
+
+.wpdcsm-social-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.wpdcsm-social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wpdcsm-social-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.wpdcsm-social-icon:hover {
+    transform: scale(1.1);
+}
+
+.wpdcsm-social-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .wpdcsm-countdown {
+        gap: 10px;
+    }
+    
+    .wpdcsm-countdown-item {
+        min-width: 70px;
+    }
+    
+    .wpdcsm-newsletter-form,
+    .wpdcsm-contact-form {
+        gap: 12px;
+    }
+    
+    .wpdcsm-social-icons {
+        gap: 12px;
+    }
+    
+    .wpdcsm-social-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+

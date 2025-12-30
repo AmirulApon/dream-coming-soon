@@ -1,0 +1,48 @@
+.coming-soon-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    
+    padding: 20px;
+    border-radius: 10px;
+}
+.coming-soon-container-main{
+    margin-top: 20%;
+}
+
+.coming-soon-message {
+    
+    margin-top: 10px;
+}
+
+.newsletter-form {
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter-button {
+    width: 25%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
