@@ -63,10 +63,10 @@ if ($wpdcsm_data['bg_type'] === 'image' && !empty($wpdcsm_data['bg_image'])) {
             <?php endif; ?>
             <h1><?php echo esc_html($wpdcsm_data['heading']); ?></h1>
             <p><?php echo esc_html($wpdcsm_data['description']); ?></p>
-            <?php echo wpdcsm_render_countdown($wpdcsm_data; ?>
-            <?php echo wpdcsm_render_newsletter($wpdcsm_data; ?>
-            <?php echo wpdcsm_render_social($wpdcsm_data; ?>
-            <?php echo wpdcsm_render_contact($wpdcsm_data; ?>
+            <?php echo wp_kses_post(wpdcsm_render_countdown($wpdcsm_data)); ?>
+            <?php echo wp_kses_post(wpdcsm_render_newsletter($wpdcsm_data)); ?>
+            <?php echo wp_kses_post(wpdcsm_render_social($wpdcsm_data)); ?>
+            <?php echo wp_kses_post(wpdcsm_render_contact($wpdcsm_data)); ?>
         </div>
     </div>
     <?php wp_footer(); ?>

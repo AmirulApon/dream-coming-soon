@@ -3,9 +3,8 @@
 Author URI: https://profiles.wordpress.org/dreamscarnival/ 
 Plugin URI: https://wordpress.org/plugins/dream-coming-soon/
 Author: Dream Carnival
-Contributors: dreamscarnival, aponwpdev
+Contributors: dreamscarnival
 Tags: coming soon, maintenance mode, under construction, Landing Page, Maintenance
-Requires at least: 6.2
 Tested up to: 6.9
 Stable tag: 2.0.0
 Requires PHP: 7.4
@@ -17,7 +16,7 @@ Best Coming Soon, Under Construction, Maintenance Mode, and Landing Page for you
 
 ## Description
 
-Dream Coming Soon & Maintenance is a simple plugin that allows you to enable or disable a "Coming Soon" mode on your WordPress site. When enabled, it redirects visitors to a static coming soon page.
+Dream Maintenance Mode, Under Construction & Coming Soon Page is a simple plugin that allows you to enable or disable a "Coming Soon" mode on your WordPress site. When enabled, it redirects visitors to a static coming soon page.
 
 ## Features
 

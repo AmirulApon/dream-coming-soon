@@ -45,7 +45,10 @@ class WP_DCSM {
         check_ajax_referer('wpdcsm_save_settings', '_wpnonce');
         
         $form_data = $this->parse_form_data($_POST['form_data']);
+        $plugin_mode = isset($form_data['wpdcsm_plugin_mode']) ? sanitize_text_field($form_data['wpdcsm_plugin_mode']) : 'coming-soon';
         $coming_soon_enabled = isset($form_data['wpdcsm_coming_soon_enabled']) ? 1 : 0;
+        
+        update_option('wpdcsm_plugin_mode', $plugin_mode);
         update_option('wpdcsm_coming_soon_enabled', $coming_soon_enabled);
         
         wp_send_json_success(array('message' => __('Settings saved successfully!', 'dream-coming-soon')));
@@ -56,8 +59,23 @@ class WP_DCSM {
         check_ajax_referer('wpdcsm_save_template', '_wpnonce');
         
         $form_data = $this->parse_form_data($_POST['form_data']);
+        $template_mode = isset($form_data['template_mode']) ? sanitize_text_field($form_data['template_mode']) : 'all';
         $selected_template = isset($form_data['wpdcsm_selected_template']) ? sanitize_text_field($form_data['wpdcsm_selected_template']) : 'template-1';
-        update_option('wpdcsm_selected_template', $selected_template);
+        
+        // Save template based on mode
+        if ($template_mode === 'all' || $template_mode === 'coming-soon') {
+            update_option('wpdcsm_selected_template', $selected_template);
+        } elseif ($template_mode === 'maintenance') {
+            update_option('wpdcsm_selected_template_maintenance', $selected_template);
+            // Also update the main template option for backward compatibility
+            update_option('wpdcsm_selected_template', $selected_template);
+        } elseif ($template_mode === 'under-construction') {
+            update_option('wpdcsm_selected_template_under-construction', $selected_template);
+            // Also update the main template option for backward compatibility
+            update_option('wpdcsm_selected_template', $selected_template);
+        } else {
+            update_option('wpdcsm_selected_template', $selected_template);
+        }
         
         wp_send_json_success(array('message' => __('Template saved successfully!', 'dream-coming-soon')));
     }

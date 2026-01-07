@@ -1,7 +1,7 @@
 <?php
 /* 
- * Plugin Name: Dream Coming Soon & Maintenance
- * Description: Dream Coming Soon & Maintenance is a simple plugin that allows you to enable or disable a "Coming Soon" mode on your WordPress site. When enabled, it redirects visitors to a static coming soon page.
+ * Plugin Name: Dream Maintenance Mode, Under Construction & Coming Soon Page
+ * Description: Dream Maintenance Mode, Under Construction & Coming Soon Page is a powerful plugin that allows you to enable Maintenance Mode, Under Construction Mode, or Coming Soon Mode on your WordPress site. Choose from beautiful templates for each mode with full customization options.
  * Version: 2.0.0
  * Author URI: https://profiles.wordpress.org/dreamscarnival/ 
  * Plugin URI: https://wordpress.org/plugins/dreams-coming-soon-maintenance/

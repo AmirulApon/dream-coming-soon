@@ -20,6 +20,14 @@ class Basic_Settings {
                     \WPDCSM\Backend\BasicTabs\Settings::output();
                 } elseif ($active_tab === 'templates') {
                     \WPDCSM\Backend\BasicTabs\Templates::output();
+                } elseif ($active_tab === 'coming-soon-templates') {
+                    \WPDCSM\Backend\BasicTabs\Templates::output('coming-soon');
+                } elseif ($active_tab === 'maintenance-templates') {
+                    \WPDCSM\Backend\BasicTabs\Templates::output('maintenance');
+                } elseif ($active_tab === 'construction-templates') {
+                    \WPDCSM\Backend\BasicTabs\Templates::output('under-construction');
+                } elseif ($active_tab === 'all-templates') {
+                    \WPDCSM\Backend\BasicTabs\Templates::output('all');
                 } elseif ($active_tab === 'main-content') {
                     \WPDCSM\Backend\BasicTabs\MainContent::output();
                 } elseif ($active_tab === 'countdown') {
