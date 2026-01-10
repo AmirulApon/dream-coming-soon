@@ -2,7 +2,7 @@
 /* 
  * Plugin Name: Dream Maintenance Mode, Under Construction & Coming Soon Page
  * Description: Dream Maintenance Mode, Under Construction & Coming Soon Page is a powerful plugin that allows you to enable Maintenance Mode, Under Construction Mode, or Coming Soon Mode on your WordPress site. Choose from beautiful templates for each mode with full customization options.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author URI: https://profiles.wordpress.org/dreamscarnival/ 
  * Plugin URI: https://wordpress.org/plugins/dreams-coming-soon-maintenance/
  * Author: Dream Carnival
@@ -22,7 +22,7 @@ defined('ABSPATH') or die('Hey, what are you doing here? You silly human!');
 /* * 
  * Define Custom Constant Variables 
  */
-define('WPDCSM_VERSION', '2.0.0');
+define('WPDCSM_VERSION', '2.0.1');
 define('WPDCSM__PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('WPDCSM_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WPDCSM_FILE', __FILE__);

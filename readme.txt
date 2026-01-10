@@ -6,7 +6,7 @@ Author: Dream Carnival
 Contributors: dreamscarnival
 Tags: coming soon, maintenance mode, under construction, Landing Page, Maintenance
 Tested up to: 6.9
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 Requires PHP: 7.4
 Requires at least:** 6.3
 License: GPLv2 or later
@@ -43,12 +43,31 @@ Dream Maintenance Mode, Under Construction & Coming Soon Page is a simple plugin
 The static coming soon page is a standard HTML file located in the plugin directory. You can customize it by editing the `coming-soon.php` file.
 
 ## Changelog
+### 2.0.1
+- Added template preview image support from assets/img/templates/ directory
+- Template previews now automatically detect images based on template keys (e.g., template-1.jpg, maintenance-template-1.jpg, construction-template-1.jpg)
+- Improved template preview system with fallback to background colors when images are not found
+- Enhanced template structure for better visual representation
+- Fixed image path generation and file existence checking
+
+### 2.0.0
+- Added Maintenance Mode and Under Construction Mode options
+- Added template tabs structure: Coming Soon Templates, Maintenance Templates, Under Construction Templates, and All Templates
+- Added 5 templates for Maintenance Mode and 5 templates for Under Construction Mode
+- Improved template selection based on active plugin mode
+- Enhanced admin interface with better tab navigation
+- Fixed WordPress coding standards issues (prefixed globals, escaped output, sanitized inputs)
+- Improved security with proper database query escaping
+- Fixed range input functionality
+- Enhanced AJAX saving functionality
+
 ### 1.0.2
 - Fix Bugs
--Capable with latest version
+- Capable with latest version
+
 ### 1.0.1
 - Fix Bugs
--Capable with latest version
+- Capable with latest version
 
 ### 1.0.0
 - Initial release
